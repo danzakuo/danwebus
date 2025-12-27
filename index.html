@@ -114,3 +114,101 @@
         }
 
         .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        footer {
+            background: #1f3a5f;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">服務項目</a></li>
+        <li><a href="#">關於我們</a></li>
+        <li><a href="#">聯絡我們</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>打造專業而動人的網站體驗</h1>
+    <p>我們專注於高品質網站設計，為品牌建立值得信賴的數位形象。</p>
+</header>
+
+<section>
+    <div class="section-title">
+        <h2>我們的服務</h2>
+        <p>專業 × 美感 × 技術整合</p>
+    </div>
+
+    <div class="services">
+        <div class="card">
+            <h3>網站設計</h3>
+            <p>現代化、響應式設計，符合品牌定位與使用者體驗。</p>
+        </div>
+        <div class="card">
+            <h3>品牌形象</h3>
+            <p>色彩、版型、視覺一致性，打造專屬品牌風格。</p>
+        </div>
+        <div class="card">
+            <h3>前端開發</h3>
+            <p>結構清晰、效能優化，確保網站穩定流暢。</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="section-title">
+        <h2>關於我們</h2>
+        <p>我們相信設計能創造價值</p>
+    </div>
+
+    <div class="about">
+        <div>
+            <p>
+                我們是一支專注於網站設計與數位體驗的團隊，
+                致力於將複雜的需求轉化為簡潔、優雅且有效的解決方案。
+                從企業官網到品牌形象頁，我們都以專業與細節為核心。
+            </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="團隊工作照">
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 品牌名稱 Brand Studio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
